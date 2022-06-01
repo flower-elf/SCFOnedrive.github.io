@@ -1,4 +1,4 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html>
 	<head>
 		<title>OneManager jump page</title>
 	</head>
@@ -31,7 +31,7 @@
 				document.getElementById('direct').href = lasturl;
 				window.location = lasturl;
 			} else {
-				var str='Error! 有误！';
+				var str='Error! 参数有误！';
 				if (!url) str+='No url! url参数为空！';
 				else document.getElementById('test1').innerHTML='<a href="'+decodeURIComponent(decodeURIComponent(url))+'">'+decodeURIComponent(decodeURIComponent(url))+'</a><br>';
 				if (!code) str+='No code from MS! 微软code为空！';
